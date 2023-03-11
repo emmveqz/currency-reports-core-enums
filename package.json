@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "compile": "npx tsc --build ./tsconfig.json",
+    "build": "npx tsc --build ./tsconfig.json",
     "clean-js": "rm -f ./src/*.js",
-    "prepack": "npm run clean-js && rm -fR ./dist && npm run compile",
+    "prepack": "npm run clean-js && rm -fR ./dist && npm run build",
     "dummy": "test"
   },
   "author": "Emmanuel Velazquez Lopez",
